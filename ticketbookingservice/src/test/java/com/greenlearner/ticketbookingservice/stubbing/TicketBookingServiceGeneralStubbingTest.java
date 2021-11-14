@@ -56,6 +56,7 @@ public class TicketBookingServiceGeneralStubbingTest {
 
         //verify 2
 
+        //branch1
         verify(postRequestedFor(urlEqualTo("/update")));
     }
 
