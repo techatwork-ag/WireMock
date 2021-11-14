@@ -63,7 +63,7 @@ public class TicketBookingServiceRequestStubbingTest {
         //then
         assertThat(response).isEqualTo(new TicketBookingResponse("1111","3333", SUCCESS));
 
-
+        //verify
         verify(postRequestedFor(urlPathEqualTo("/payments")).withRequestBody(
                 equalToJson("{\n" +
                         "\"cardNumber\" : \"1111-1111-1111-1111\",\n" +
